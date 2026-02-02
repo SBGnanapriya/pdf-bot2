@@ -8,7 +8,7 @@ st.title("📄 PDF Question Answering Bot (Gemini)")
 
 # ---------------- GEMINI SETUP ----------------
 try:
-    genai.configure(api_key=st.secrets["AIzaSyDBRpZl_gaWQ7w75jyQOnx9QcgLBBfgzVU"])
+    genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
     model = genai.GenerativeModel("gemini-1.5-flash")
 except Exception as e:
     st.error("❌ Gemini API key not configured")
